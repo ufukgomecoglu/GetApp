@@ -1,0 +1,15 @@
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\obj\Debug\GetExe.csproj.AssemblyReference.cache
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\obj\Debug\GetExe.csproj.SuggestedBindingRedirects.cache
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\obj\Debug\GetExe.Properties.Resources.resources
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\obj\Debug\GetExe.csproj.GenerateResource.cache
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\obj\Debug\GetExe.csproj.CoreCompileInputs.cache
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\bin\Debug\GetExe.exe.config
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\bin\Debug\GetExe.exe
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\bin\Debug\GetExe.pdb
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\bin\Debug\EntityFramework.dll
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\bin\Debug\EntityFramework.xml
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\obj\Debug\GetExe.csproj.CopyComplete
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\obj\Debug\GetExe.exe
+C:\Users\ufukg\Documents\GitHub\GetApp\GetExe\obj\Debug\GetExe.pdb
