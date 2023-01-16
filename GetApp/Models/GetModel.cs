@@ -11,8 +11,11 @@ namespace GetApp.Models
             : base("name=GetModel")
         {
         }
-
-
+        public virtual DbSet<Maneger> Manegers { get; set; }
+        public virtual DbSet<ManegerSeniority> ManegerSeniorities { get; set; }
+        public virtual DbSet<Retailer> Retailers { get; set; }
+        public virtual DbSet<RetailerSeniority> RetailerSeniorities { get; set; }
+        public virtual DbSet<Card> Cards { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }
