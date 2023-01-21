@@ -27,6 +27,8 @@ namespace GetApp.Models
         [Required(ErrorMessage = "Bu alan zorunludur")]
         [StringLength(maximumLength: 250, ErrorMessage = "En fazla 250 karakter olabilir")]
         public string Mail { get; set; }
+        [StringLength(maximumLength: 150)]
+        public string ProfilImagesPath { get; set; }
         public bool IsActive { get; set; }
     }
 }

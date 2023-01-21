@@ -1,0 +1,58 @@
+﻿@using GetApp.Models
+@{
+    Maneger admin = Session["adminSession"] as Maneger;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GET</title>
+    <link href="~/Areas/AdminInterface/Assets/CSS/AdminLayoutDesign.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="main">
+        <span  onclick="openNav()">&#9776; </span>
+        <div class="topbar My-Color-Theme-2-hex-bg">
+            <a href="@Url.Action("LogOut","Login")" class="cikis My-Color-Theme-1-hex">Çıkış</a>
+            <div class="logo">
+
+
+                <a href="@Url.Action("Index","Home")"><img src="~/Areas/AdminInterface/Assets/Images/Logo 600x392.png" /></a>
+
+            </div>
+            <div class="profil">
+                <label class="My-Color-Theme-1-hex">ufuk gömeçoğlu</label>
+                <br />
+                <label class="My-Color-Theme-1-hex">Admin</label>
+            </div>
+            <div class="profilImage">
+                <a href="#">
+                    <img src="~/Areas/AdminInterface/Assets/Images/AdminImages.png" />
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            @RenderBody()
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "12%";
+            document.getElementById("main").style.marginLeft = "12%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+</body>
+</html>

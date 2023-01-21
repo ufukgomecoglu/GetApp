@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Giriş Ekranı</title>
+    <link href="~/Areas/AdminInterface/Assets/CSS/AdminLoginDesign.css" rel="stylesheet" />
+</head>
+<body style="background-color:#B35820">
+    <div class="loginFormContainer">
+        <div class="loginFormTitle">
+            <h3>Admin Login</h3>
+        </div>
+        <div class="loginFormContent">
+            @if (ViewBag.message != null)
+            {
+                <div style="color:red">
+                    @ViewBag.message
+                </div>
+            }
+            @using (Html.BeginForm())
+            {
+                <div class="row">
+                    <input type="text" name="mail" class="" />
+                </div>
+                <div class="row">
+                    <input type="password" name="password" />
+                </div>
+                <div class="row">
+                    <input type="submit" value="Giriş Yap" />
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>

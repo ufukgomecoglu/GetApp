@@ -24,20 +24,23 @@ namespace GetApp.Models
         public decimal RawPrice { get; set; }
         [Display(Name = "Kar Oranı")]
         [Required(ErrorMessage = "Alan Boş Bırakılamaz")]
-        [Range(0.0, 1,ErrorMessage = "0 ile 1 arasında sayı giriniz")]
+        [Range(0.0, 1, ErrorMessage = "0 ile 1 arasında ve virgülden sonra maksimum 4 sayı giriniz")]
+        [DisplayFormat(DataFormatString = "{0:n4}")]
         public decimal Profit { get; set; }
         [Display(Name = "İndirim Oranı")]
         [Required(ErrorMessage = "Alan Boş Bırakılamaz")]
-        [Range(0.0, 1, ErrorMessage = "0 ile 1 arasında sayı giriniz")]
+        [Range(0.0, 1, ErrorMessage = "0 ile 1 arasında ve virgülden sonra maksimum 4 sayı giriniz")]
+        [DisplayFormat(DataFormatString = "{0:n2}")]
         public decimal Discount { get; set; }
-        [Display(Name = "Hesaplanan İndirim Oranı")]
-        public decimal CalculatedDiscount { get; set; }
         [Display(Name = "Hesaplanan Kar")]
+        [DisplayFormat(DataFormatString = "{0:n2}")]
         public decimal CalculatedProfit { get; set; }
-        [Display(Name = "KDV")]
+        [Display(Name = "KDV Oranı")]
         [Required(ErrorMessage = "Alan Boş Bırakılamaz")]
+        [DisplayFormat(DataFormatString = "{0:n2}")]
         public decimal KDV { get; set; }
         [Display(Name = "Toplam Fiyat")]
+        [DisplayFormat(DataFormatString = "{0:n2}")]
         public decimal TotalPrice { get; set; }
         [Display(Name = "Icon")]
         [StringLength(maximumLength: 150)]
