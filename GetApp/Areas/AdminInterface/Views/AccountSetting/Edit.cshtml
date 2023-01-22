@@ -1,0 +1,80 @@
+﻿@model GetApp.Models.Maneger
+@{
+    ViewBag.Title = "Hesap Ayarları";
+    Layout = "~/Areas/AdminInterface/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div class="form">
+    <div class="formtitle">
+        <h3>Hesap Ayarları</h3>
+    </div>
+    <div class="formcontent">
+        @if (ViewBag.Mesaj != null)
+        {
+            <div>
+                @ViewBag.Mesaj
+            </div>
+        }
+        @using (Html.BeginForm("Edit", "AccountSetting", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken();
+            @Html.HiddenFor(model => model.ID)
+            @Html.HiddenFor(model => model.ManegerSeniority_ID)
+            @Html.HiddenFor(model => model.IsActive)
+            <div>
+                @Html.LabelFor(model => model.Name)
+                <br />
+                @Html.EditorFor(model => model.Name)
+                <br />
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+            <div>
+                @Html.LabelFor(model => model.Surname)
+                <br />
+                @Html.EditorFor(model => model.Surname)
+                <br />
+                @Html.ValidationMessageFor(model => model.Surname)
+            </div>
+            <div>
+                @Html.LabelFor(model => model.UserName)
+                <br />
+                @Html.EditorFor(model => model.UserName)
+                <br />
+                @Html.ValidationMessageFor(model => model.UserName)
+            </div>
+            <div>
+                @Html.LabelFor(model => model.ProfilImagesPath)
+                <br />
+                <input type="file" name="profilImage" />
+            </div>
+            <div>
+                @Html.LabelFor(model => model.Mail)
+                <br />
+                @Html.EditorFor(model => model.Mail)
+                <br />
+                @Html.ValidationMessageFor(model => model.Mail)
+            </div>
+            <div>
+                @Html.LabelFor(model => model.Password)
+                <br />
+                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { type = "password" } })
+                <br />
+                @Html.ValidationMessageFor(model => model.Password)
+            </div>
+            <div>
+                @Html.LabelFor(model => model.ConfirmPassword)
+                <br />
+                @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { type = "password" } })
+                <br />
+                @Html.ValidationMessageFor(model => model.ConfirmPassword)
+            </div>
+            <div>
+                <input type="submit" value="Hesap Düzenle" />
+            </div>
+        }
+    </div>
+</div>
+    @*<div>
+        <a href="@Url.Action("LogOut","Login")">Kategoriler Listesine Dön</a>
+    </div>*@
+

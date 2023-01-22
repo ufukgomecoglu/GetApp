@@ -310,7 +310,7 @@ My-Color-Theme-1-hex-bg {
     }
 
 .content {
-    margin-top: auto;
+    margin-top: 10px;
     margin-left: 3%;
     width: 100%;
 }
@@ -367,7 +367,6 @@ My-Color-Theme-1-hex-bg {
 span {
     cursor: pointer;
     float: left;
-    width: 2%;
     color: #FF6200;
     background-color: white;
     height: 50px;

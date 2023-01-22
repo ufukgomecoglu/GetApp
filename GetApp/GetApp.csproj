@@ -99,16 +99,20 @@
   <ItemGroup>
     <Content Include="Areas\AdminInterface\Assets\CSS\AdminLayoutDesign.css" />
     <Content Include="Areas\AdminInterface\Assets\CSS\AdminLoginDesign.css" />
+    <Content Include="Areas\AdminInterface\Assets\CSS\ContentDesign.css" />
     <Content Include="Areas\AdminInterface\Assets\Images\AdminImages.png" />
     <Content Include="Areas\AdminInterface\Assets\Images\Logo 600x392.png" />
+    <Content Include="Areas\AdminInterface\Assets\Images\ProfilImages\2af94a77-9ccf-4847-99c3-eca6761fe3ff.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\AdminInterface\AdminInterfaceAreaRegistration.cs" />
+    <Compile Include="Areas\AdminInterface\Controllers\AccountSettingController.cs" />
     <Compile Include="Areas\AdminInterface\Controllers\HomeController.cs" />
     <Compile Include="Areas\AdminInterface\Controllers\LoginController.cs" />
+    <Compile Include="Areas\AdminInterface\Controllers\ManagerController.cs" />
     <Compile Include="Areas\AdminInterface\Filters\AdminAuthenticationFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -130,6 +134,7 @@
     <Content Include="Areas\AdminInterface\Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Areas\AdminInterface\Views\Home\Index.cshtml" />
     <Content Include="Areas\AdminInterface\Views\Login\Index.cshtml" />
+    <Content Include="Areas\AdminInterface\Views\AccountSetting\Edit.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -142,6 +147,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\AdminInterface\Assets\JS\" />
     <Folder Include="Areas\AdminInterface\Data\" />
+    <Folder Include="Areas\AdminInterface\Views\Admin\" />
+    <Folder Include="Areas\AdminInterface\Views\Manager\" />
     <Folder Include="Controllers\" />
     <Folder Include="Views\Home\" />
   </ItemGroup>

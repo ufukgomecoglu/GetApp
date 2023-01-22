@@ -20,7 +20,7 @@ namespace GetApp.Areas.AdminInterface.Filters
         {
             if (filterContext.Result == null || filterContext.Result is HttpUnauthorizedResult)
             {
-                filterContext.Result = new RedirectResult("~/AdminPanel/Login/Index");
+                filterContext.Result = new RedirectResult("~/AdminInterface/Login/Index");
             }
         }
     }
